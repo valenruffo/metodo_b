@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="METODO_B — Arquitectura, prevención y criterio. Un sistema donde la información ordena decisiones." />
+  <meta name="theme-color" content="#EAE0D5" />
+  <title>METODO_B — Arquitectura & Prevención</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="Recursos/Logos/Logos-02.png" />
+  <link rel="preload" href="Recursos/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="Recursos/Fonts/Helvetica/HelveticaNeueLight.otf" as="font" type="font/otf" crossorigin />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <a href="#" class="nav__logo" aria-label="METODO_B — Ir al inicio">
+      <img src="Recursos/Logos/Logos-15.png" alt="METODO_B" width="180" height="40" />
+    </a>
+
+    <nav class="nav__links" role="navigation" aria-label="Navegación principal">
+      <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+      <a href="#about" class="nav__link">Quién Soy</a>
+      <a href="#servicios" class="nav__link">Servicios</a>
+      <a href="#contacto" class="nav__link">Contacto</a>
+    </nav>
+
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero" aria-label="Presentación">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="hero__tagline">Arquitectura &middot; Prevención &middot; Criterio</p>
+          <h1 class="hero__title">
+            Hay decisiones que no deberían tomarse<br />desde la <strong>intuición.</strong>
+          </h1>
+          <p class="hero__subtitle">
+            Detrás de cada propiedad existen historias, riesgos, posibilidades
+            y detalles que muchas veces pasan desapercibidos. Entenderlos cambia
+            por completo la manera de decidir.
+          </p>
+          <a href="#servicios" class="hero__cta">
+            Conocé los métodos
+            <svg class="hero__cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="hero__images" aria-hidden="true">
+          <div class="hero__img hero__img--top">
+            <img src="propiedades/propiedad-3.jpg" alt="" loading="eager" />
+          </div>
+          <div class="hero__img hero__img--bottom">
+            <img src="propiedades/propiedad-6.jpg" alt="" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="section__inner">
+        <div class="about__grid">
+          <div class="about__image-wrapper anim-fade-up">
+            <div class="about__image-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4 4-7 8-7s8 3 8 7"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="about__content anim-fade-up">
+            <p class="section__label">Quién está detrás del método</p>
+            <h2 id="about-title" class="section__title">
+              Arquitecta.<br /><strong>Analista. Guía.</strong>
+            </h2>
+            <p class="about__name">Catalina Bellantig</p>
+            <p class="about__role">Arquitecta &mdash; Consultora en prevención arquitectónica</p>
+            <p class="about__bio">
+              Mi trabajo consiste en mirar donde otros no miran. Observar, analizar
+              y ordenar información para que cada decisión sobre una propiedad esté
+              respaldada por criterio técnico, no por impulso. Creo que entender una
+              propiedad cambia la decisión, y que la prevención es la forma más
+              inteligente de invertir con tranquilidad.
+            </p>
+            <div class="about__stats">
+              <div>
+                <div class="about__stat-value">+200</div>
+                <div class="about__stat-label">Inspecciones realizadas</div>
+              </div>
+              <div>
+                <div class="about__stat-value">+50</div>
+                <div class="about__stat-label">Inversores asesorados</div>
+              </div>
+              <div>
+                <div class="about__stat-value">100%</div>
+                <div class="about__stat-label">Informes detallados</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MANIFIESTO QUOTE ===== -->
+    <section class="manifesto" aria-label="Manifiesto">
+      <div class="manifesto__bg" aria-hidden="true"></div>
+      <div class="manifesto__inner anim-fade-in">
+        <blockquote>
+          <p class="manifesto__quote">
+            &ldquo;Porque cuando la información se ordena,<br />
+            <strong>la decisión cambia.</strong> Y cuando la prevención<br />
+            está presente, aparece la <strong>tranquilidad.</strong>&rdquo;
+          </p>
+        </blockquote>
+        <p class="manifesto__author">MÉTODO_B</p>
+      </div>
+    </section>
+
+    <!-- ===== PROPERTY SHOWCASE ===== -->
+    <section class="section showcase" aria-label="Galería de propiedades">
+      <div class="section__inner">
+        <header class="services__header anim-fade-up">
+          <p class="section__label">Propiedades</p>
+          <h2 class="section__title">
+            Cada espacio<br /><strong>tiene su propia historia.</strong>
+          </h2>
+        </header>
+        <div class="showcase__grid anim-stagger">
+          <div class="showcase__item">
+            <img src="propiedades/propiedad-1.jpg" alt="Propiedad inspeccionada" loading="lazy" />
+          </div>
+          <div class="showcase__item showcase__item--tall">
+            <img src="propiedades/propiedad-6.jpg" alt="Propiedad inspeccionada" loading="lazy" />
+          </div>
+          <div class="showcase__item">
+            <img src="propiedades/propiedad-3.jpg" alt="Propiedad inspeccionada" loading="lazy" />
+          </div>
+          <div class="showcase__item showcase__item--wide">
+            <img src="propiedades/propiedad-4.jpg" alt="Propiedad inspeccionada" loading="lazy" />
+          </div>
+          <div class="showcase__item">
+            <img src="propiedades/propiedad-5.jpg" alt="Propiedad inspeccionada" loading="lazy" />
+          </div>
+          <div class="showcase__item showcase__item--tall">
+            <img src="propiedades/propiedad-7.jpg" alt="Propiedad inspeccionada" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section id="servicios" class="section services" aria-labelledby="services-title">
+      <div class="section__inner">
+        <header class="services__header anim-fade-up">
+          <p class="section__label">Servicios</p>
+          <h2 id="services-title" class="section__title">
+            Tres métodos.<br /><strong>Un mismo criterio.</strong>
+          </h2>
+          <p class="section__text">
+            Cada propiedad es distinta. Por eso desarrollamos tres niveles de análisis
+            para acompañarte según el momento y la profundidad que necesites.
+          </p>
+        </header>
+
+        <div class="services__grid anim-stagger">
+
+          <!-- Servicio 1: ESENCIAL -->
+          <article class="service-card" aria-labelledby="svc-esencial-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <span class="service-card__tag">Esencial</span>
+            <h3 id="svc-esencial-title" class="service-card__title">MÉTODO ESENCIAL</h3>
+            <p class="service-card__subtitle">
+              Diagnóstico visual completo del estado general de una propiedad.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Relevamiento técnico y arquitectónico de carácter ocular
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Evaluación funcional y perceptual del inmueble
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Análisis de patologías visibles y fallas de diseño
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Identificación de problemas de uso y riesgos futuros
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Diagnóstico organizado por áreas de la vivienda
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Informe claro y estratégico sobre el estado general
+              </li>
+            </ul>
+            <div class="service-card__audience">
+              <strong>Dirigido a:</strong> compradores, inversores y controles post obra.<br />
+              <strong>Objetivo:</strong> reducir riesgos antes de comprar, invertir o recibir una propiedad.
+            </div>
+            <a href="https://wa.me/5493415474414?text=Hola%21%20Me%20interesa%20el%20M%C3%89TODO%20ESENCIAL%20de%20METODO_B.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias%21" class="service-card__cta" target="_blank" rel="noopener">
+              Consultar por WhatsApp
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </article>
+
+          <!-- Servicio 2: INTEGRAL -->
+          <article class="service-card" aria-labelledby="svc-integral-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 3v18"/>
+              </svg>
+            </div>
+            <span class="service-card__tag">Integral</span>
+            <h3 id="svc-integral-title" class="service-card__title">MÉTODO INTEGRAL</h3>
+            <p class="service-card__subtitle">
+              Auditoría arquitectónica y diagnóstico técnico avanzado.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Incluye todo lo contemplado en el Método Esencial
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Evaluación de instalaciones y sistemas del inmueble
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Análisis ocular y pruebas de gas, agua, cloacas, pluviales, electricidad, climatización y ventilación
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Posibilidad de incorporar registro fotográfico técnico
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Revisión de planos y documentación disponible
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Evaluación del potencial del inmueble y futuras intervenciones
+              </li>
+            </ul>
+            <div class="service-card__audience">
+              <strong>Dirigido a:</strong> inversores, desarrolladores, reformas integrales y controles post obra.<br />
+              <strong>Objetivo:</strong> tomar decisiones con mayor seguridad técnica, espacial y estratégica.
+            </div>
+            <a href="https://wa.me/5493415474414?text=Hola%21%20Me%20interesa%20el%20M%C3%89TODO%20INTEGRAL%20de%20METODO_B.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias%21" class="service-card__cta" target="_blank" rel="noopener">
+              Consultar por WhatsApp
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </article>
+
+          <!-- Servicio 3: EXCLUSIVO -->
+          <article class="service-card" aria-labelledby="svc-exclusivo-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/>
+                <path d="M12 22V12M22 8.5L12 15L2 8.5"/>
+              </svg>
+            </div>
+            <span class="service-card__tag service-card__tag--exclusive">Exclusivo</span>
+            <h3 id="svc-exclusivo-title" class="service-card__title">MÉTODO EXCLUSIVO</h3>
+            <p class="service-card__subtitle">
+              Auditoría integral arquitectónica, funcional y técnica para inmuebles de alta complejidad.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Evaluación completa de ambientes interiores y exteriores
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Análisis de fachadas, cubiertas, terminaciones y estado general de conservación
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Revisión funcional de instalaciones de gas, agua, cloacas, pluviales, electricidad, climatización y ventilación
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Evaluación de calidad constructiva, mantenimiento y desempeño general del inmueble
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Análisis de confort, habitabilidad y experiencia del usuario
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Identificación de oportunidades de mejora y aspectos a considerar para futuras intervenciones
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Lectura estratégica "Lo que no se ve", orientada a anticipar condicionantes futuros
+              </li>
+              <li class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                Sistema de valoración por sectores con observaciones y recomendaciones profesionales
+              </li>
+            </ul>
+            <div class="service-card__audience">
+              <strong>Ideal para:</strong> propiedades premium, inversores inmobiliarios, compras de alto valor, reformas integrales, desarrolladores y constructoras, auditorías previas a compra o recepción de inmuebles.<br />
+              <strong>Objetivo:</strong> aportar una visión integral del inmueble para facilitar decisiones con mayor previsibilidad técnica, funcional, económica y arquitectónica.
+            </div>
+            <a href="https://wa.me/5493415474414?text=Hola%21%20Me%20interesa%20el%20M%C3%89TODO%20EXCLUSIVO%20de%20METODO_B.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias%21" class="service-card__cta" target="_blank" rel="noopener">
+              Consultar por WhatsApp
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section contact" aria-labelledby="contact-title">
+      <div class="contact__bg" aria-hidden="true"></div>
+      <div class="section__inner">
+        <div class="contact__grid anim-fade-up">
+          <div class="contact__info">
+            <p class="section__label">Contacto</p>
+            <h2 id="contact-title" class="section__title">
+              Transformar incertidumbre<br />en <strong>decisiones seguras.</strong>
+            </h2>
+            <p class="section__text" style="margin-top: var(--space-3);">
+              Completá el formulario y te respondo a la brevedad. Cada caso es único
+              y merece una mirada personalizada.
+            </p>
+          </div>
+
+          <form class="contact__form" id="contact-form" novalidate>
+            <div class="contact__field">
+              <label for="nombre" class="contact__label">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" class="contact__input" placeholder="Tu nombre y apellido" required />
+            </div>
+
+            <div class="contact__field">
+              <label for="telefono" class="contact__label">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="contact__input" placeholder="+54 9 11 1234-5678" />
+            </div>
+
+            <div class="contact__field">
+              <label for="interes" class="contact__label">Método de interés</label>
+              <select id="interes" name="interes" class="contact__input" required>
+                <option value="" disabled selected>Seleccioná un método</option>
+                <option value="MÉTODO ESENCIAL">MÉTODO ESENCIAL</option>
+                <option value="MÉTODO INTEGRAL">MÉTODO INTEGRAL</option>
+                <option value="MÉTODO EXCLUSIVO">MÉTODO EXCLUSIVO</option>
+              </select>
+            </div>
+
+            <div class="contact__field">
+              <label for="mensaje" class="contact__label">Mensaje (opcional)</label>
+              <textarea id="mensaje" name="mensaje" class="contact__input contact__textarea" placeholder="Contame brevemente sobre tu propiedad o consulta..." rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="contact__submit">
+              Enviar por WhatsApp
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="Recursos/Logos/Logos-15.png" alt="METODO_B" width="140" height="31" />
+        <p>
+          Un sistema donde la información ordena decisiones.
+          Arquitectura, inversión y estrategia. Antes del proyecto,
+          antes de la compra, antes del error.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer__heading">Navegación</h4>
+        <ul class="footer__links">
+          <li><a href="#inicio" class="footer__link">Inicio</a></li>
+          <li><a href="#about" class="footer__link">Quién Soy</a></li>
+          <li><a href="#servicios" class="footer__link">Servicios</a></li>
+          <li><a href="#contacto" class="footer__link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer__heading">Contacto</h4>
+        <ul class="footer__links">
+          <li><a href="mailto:info@metodo-b.ar" class="footer__link">info@metodo-b.ar</a></li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="6" width="20" height="16" rx="2"/>
+              <path d="M8 11v6M8 8v.01M12 17v-4.5c0-1 .8-2 2-2s1.7 1.2 1.9 2.2"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; <time datetime="2025">2025</time> MÉTODO_B. Todos los derechos reservados.
+      </p>
+      <p class="footer__credits">
+        Diseño basado en el Manual de Identidad MÉTODO_B
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
