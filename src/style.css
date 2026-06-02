@@ -1140,7 +1140,7 @@ select.contact__input option[disabled] {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white);
-  background: #25D366;
+  background: var(--chocolate);
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background var(--duration-fast) var(--ease-out-expo),
@@ -1148,7 +1148,7 @@ select.contact__input option[disabled] {
 }
 
 .contact__submit:hover {
-  background: #1DA851;
+  background: var(--chocolate-dark);
 }
 
 .contact__submit:active {
