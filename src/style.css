@@ -755,6 +755,7 @@ button {
    ============================================ */
 .services {
   background-color: var(--white);
+  border-top: 1px solid var(--border);
 }
 
 .services__header {
@@ -961,6 +962,11 @@ button {
    ============================================ */
 .showcase {
   background-color: var(--white);
+  padding-bottom: var(--space-10);
+}
+
+.showcase + .services {
+  padding-top: var(--space-10);
 }
 
 .showcase__grid {
