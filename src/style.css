@@ -396,16 +396,17 @@ button {
 }
 
 .hero__title {
-  font-family: var(--font-primary);
-  font-size: clamp(2rem, 4.5vw, var(--text-4xl));
-  font-weight: 200;
-  line-height: 1.18;
-  letter-spacing: -0.02em;
+  font-family: var(--font-aux);
+  font-size: clamp(2.25rem, 5vw, var(--text-5xl));
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
 }
 
 .hero__title strong {
-  font-weight: 600;
+  font-family: var(--font-aux);
+  font-weight: 700;
 }
 
 .hero__subtitle {
@@ -574,17 +575,18 @@ button {
 }
 
 .section__title {
-  font-family: var(--font-primary);
+  font-family: var(--font-aux);
   font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
   margin-bottom: var(--space-4);
 }
 
 .section__title strong {
-  font-weight: 600;
+  font-family: var(--font-aux);
+  font-weight: 700;
 }
 
 .section__text {
@@ -729,17 +731,18 @@ button {
 }
 
 .manifesto__quote {
-  font-family: var(--font-primary);
+  font-family: var(--font-aux);
   font-size: clamp(var(--text-xl), 3vw, var(--text-3xl));
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.4;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: var(--white);
   margin-bottom: var(--space-4);
 }
 
 .manifesto__quote strong {
-  font-weight: 600;
+  font-family: var(--font-aux);
+  font-weight: 700;
   color: var(--beige);
 }
 
@@ -844,9 +847,9 @@ button {
 }
 
 .service-card__title {
-  font-family: var(--font-primary);
+  font-family: var(--font-aux);
   font-size: var(--text-lg);
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--text-primary);
 }
