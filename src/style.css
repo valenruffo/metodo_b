@@ -963,13 +963,32 @@ button {
 }
 
 .service-card--esencial .service-card__icon {
-  background: rgba(255, 255, 255, 0.4);
-  color: var(--chocolate);
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--white);
 }
 
 .service-card--esencial .service-card__tag {
-  background: rgba(255, 255, 255, 0.4);
-  color: var(--chocolate);
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--white);
+}
+
+.service-card--esencial .service-card__title,
+.service-card--esencial .service-card__subtitle,
+.service-card--esencial .service-card__item,
+.service-card--esencial .service-card__audience {
+  color: var(--white);
+}
+
+.service-card--esencial .service-card__audience strong {
+  color: var(--white);
+}
+
+.service-card--esencial .service-card__item svg {
+  color: var(--white);
+}
+
+.service-card--esencial .service-card__audience {
+  border-top-color: rgba(255, 255, 255, 0.2);
 }
 
 .service-card--integral {
@@ -983,19 +1002,19 @@ button {
 
 .service-card--integral .service-card__icon {
   background: rgba(255, 255, 255, 0.2);
-  color: var(--beige-light);
+  color: var(--white);
 }
 
 .service-card--integral .service-card__tag {
   background: rgba(255, 255, 255, 0.2);
-  color: var(--beige-light);
+  color: var(--white);
 }
 
 .service-card--integral .service-card__title,
 .service-card--integral .service-card__subtitle,
 .service-card--integral .service-card__item,
 .service-card--integral .service-card__audience {
-  color: var(--beige-light);
+  color: var(--white);
 }
 
 .service-card--integral .service-card__audience strong {
@@ -1003,7 +1022,11 @@ button {
 }
 
 .service-card--integral .service-card__item svg {
-  color: var(--beige-light);
+  color: var(--white);
+}
+
+.service-card--integral .service-card__audience {
+  border-top-color: rgba(255, 255, 255, 0.2);
 }
 
 .service-card--exclusivo {
@@ -1017,17 +1040,32 @@ button {
 
 .service-card--exclusivo .service-card__icon {
   background: rgba(255, 255, 255, 0.3);
-  color: var(--chocolate-dark);
+  color: var(--white);
 }
 
-.service-card--exclusivo .service-card__tag {
-  background: rgba(255, 255, 255, 0.3);
-  color: var(--chocolate-dark);
-}
-
+.service-card--exclusivo .service-card__tag,
 .service-card--exclusivo .service-card__tag--exclusive {
-  background: rgba(255, 255, 255, 0.4);
-  color: var(--chocolate-dark);
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--white);
+}
+
+.service-card--exclusivo .service-card__title,
+.service-card--exclusivo .service-card__subtitle,
+.service-card--exclusivo .service-card__item,
+.service-card--exclusivo .service-card__audience {
+  color: var(--white);
+}
+
+.service-card--exclusivo .service-card__audience strong {
+  color: var(--white);
+}
+
+.service-card--exclusivo .service-card__item svg {
+  color: var(--white);
+}
+
+.service-card--exclusivo .service-card__audience {
+  border-top-color: rgba(255, 255, 255, 0.2);
 }
 
 /* ============================================
