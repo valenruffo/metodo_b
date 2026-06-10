@@ -95,10 +95,10 @@
   /* Brand Colors — from Manual de Identidad METODO_B */
   --beige:            #EAE0D5;   /* Arena suave — base neutra y luminosa */
   --beige-light:      #F5F1EB;   /* Arena clara */
-  --vison:            #B0A090;   /* Visón — transición, equilibra técnico y cercano */
-  --chocolate:        #6B5C4F;   /* Chocolate desaturado — profundidad y calidez */
+  --vison:            #A59D90;   /* Visón — transición, equilibra técnico y cercano */
+  --chocolate:        #5C4F44;   /* Chocolate desaturado — profundidad y calidez */
   --chocolate-dark:   #4A3F35;   /* Chocolate oscuro */
-  --gris-azulado:     #8A95A4;   /* Gris azulado — componente técnico, precisión */
+  --gris-azulado:     #9EA3AC;   /* Gris azulado — componente técnico, precisión */
   --gris-azulado-dark:#6B7685;   /* Gris azulado oscuro */
   --gris-azulado-light:#BCC4CE;  /* Gris azulado claro */
 
@@ -950,6 +950,84 @@ button {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gris-azulado);
+}
+
+/* Service card color variants */
+.service-card--esencial {
+  background: rgba(165, 157, 144, 0.6);
+  border-color: rgba(165, 157, 144, 0.3);
+}
+
+.service-card--esencial::before {
+  background: var(--vison);
+}
+
+.service-card--esencial .service-card__icon {
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--chocolate);
+}
+
+.service-card--esencial .service-card__tag {
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--chocolate);
+}
+
+.service-card--integral {
+  background: rgba(92, 79, 68, 0.6);
+  border-color: rgba(92, 79, 68, 0.3);
+}
+
+.service-card--integral::before {
+  background: var(--chocolate);
+}
+
+.service-card--integral .service-card__icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--beige-light);
+}
+
+.service-card--integral .service-card__tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--beige-light);
+}
+
+.service-card--integral .service-card__title,
+.service-card--integral .service-card__subtitle,
+.service-card--integral .service-card__item,
+.service-card--integral .service-card__audience {
+  color: var(--beige-light);
+}
+
+.service-card--integral .service-card__audience strong {
+  color: var(--white);
+}
+
+.service-card--integral .service-card__item svg {
+  color: var(--beige-light);
+}
+
+.service-card--exclusivo {
+  background: rgba(158, 163, 172, 0.6);
+  border-color: rgba(158, 163, 172, 0.3);
+}
+
+.service-card--exclusivo::before {
+  background: var(--gris-azulado);
+}
+
+.service-card--exclusivo .service-card__icon {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--chocolate-dark);
+}
+
+.service-card--exclusivo .service-card__tag {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--chocolate-dark);
+}
+
+.service-card--exclusivo .service-card__tag--exclusive {
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--chocolate-dark);
 }
 
 /* ============================================
