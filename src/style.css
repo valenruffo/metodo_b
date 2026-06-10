@@ -989,32 +989,32 @@ button {
 }
 
 .service-card--esencial .service-card__icon {
-  background: rgba(255, 255, 255, 0.3);
-  color: var(--white);
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--chocolate);
 }
 
 .service-card--esencial .service-card__tag {
-  background: rgba(255, 255, 255, 0.25);
-  color: var(--white);
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--chocolate);
 }
 
 .service-card--esencial .service-card__title,
 .service-card--esencial .service-card__subtitle,
 .service-card--esencial .service-card__item,
 .service-card--esencial .service-card__audience {
-  color: var(--white);
+  color: var(--chocolate);
 }
 
 .service-card--esencial .service-card__audience strong {
-  color: var(--white);
+  color: var(--chocolate);
 }
 
 .service-card--esencial .service-card__item svg {
-  color: var(--white);
+  color: var(--chocolate);
 }
 
 .service-card--esencial .service-card__audience {
-  border-top-color: rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(92, 79, 68, 0.2);
 }
 
 .service-card--integral {
@@ -1066,32 +1066,32 @@ button {
 
 .service-card--exclusivo .service-card__icon {
   background: rgba(255, 255, 255, 0.3);
-  color: var(--white);
+  color: var(--chocolate);
 }
 
 .service-card--exclusivo .service-card__tag,
 .service-card--exclusivo .service-card__tag--exclusive {
-  background: rgba(255, 255, 255, 0.25);
-  color: var(--white);
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--chocolate);
 }
 
 .service-card--exclusivo .service-card__title,
 .service-card--exclusivo .service-card__subtitle,
 .service-card--exclusivo .service-card__item,
 .service-card--exclusivo .service-card__audience {
-  color: var(--white);
+  color: var(--chocolate);
 }
 
 .service-card--exclusivo .service-card__audience strong {
-  color: var(--white);
+  color: var(--chocolate);
 }
 
 .service-card--exclusivo .service-card__item svg {
-  color: var(--white);
+  color: var(--chocolate);
 }
 
 .service-card--exclusivo .service-card__audience {
-  border-top-color: rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(92, 79, 68, 0.2);
 }
 
 /* ============================================
