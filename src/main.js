@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initHeroEntrance();
   initContactForm();
+  initWhatsAppBubble();
 });
 
 // ============================================
@@ -273,3 +274,27 @@ function initContactForm() {
     window.open(url, '_blank', 'noopener');
   });
 }
+
+// ============================================
+// WHATSAPP FLOATING BUBBLE TOOLTIP
+// ============================================
+function initWhatsAppBubble() {
+  const tooltip = document.getElementById('wpp-tooltip');
+  const closeBtn = document.getElementById('wpp-tooltip-close');
+  if (!tooltip || !closeBtn) return;
+
+  // Show tooltip after 4 seconds if not closed before
+  if (!localStorage.getItem('wpp_tooltip_closed')) {
+    setTimeout(() => {
+      tooltip.classList.add('wpp-btn__tooltip--visible');
+    }, 4000);
+  }
+
+  closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    tooltip.classList.remove('wpp-btn__tooltip--visible');
+    localStorage.setItem('wpp_tooltip_closed', 'true');
+  });
+}
+
