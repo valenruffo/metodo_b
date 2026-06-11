@@ -240,6 +240,7 @@ function initContactForm() {
 
     const nombre = form.nombre.value.trim();
     const telefono = form.telefono.value.trim();
+    const email = form.email.value.trim();
     const interes = form.interes.value;
     const mensaje = form.mensaje.value.trim();
 
@@ -261,6 +262,7 @@ function initContactForm() {
     ];
 
     if (telefono) parts.push(`*Teléfono:* ${telefono}`);
+    if (email) parts.push(`*Email:* ${email}`);
     parts.push(`*Método de interés:* ${interes}`);
     if (mensaje) {
       parts.push(``);
