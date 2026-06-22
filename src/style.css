@@ -799,6 +799,18 @@ button {
   gap: var(--space-4);
 }
 
+.services__disclaimer {
+  margin-top: var(--space-6);
+  font-family: var(--font-secondary);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: var(--max-width-narrow);
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
 .service-card {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -875,6 +887,28 @@ button {
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--text-primary);
+}
+
+.service-card__price {
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card__price-value {
+  font-family: var(--font-primary);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.service-card__price-details {
+  font-family: var(--font-secondary);
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  margin-top: 4px;
 }
 
 .service-card__subtitle {
@@ -1001,8 +1035,13 @@ button {
 .service-card--esencial .service-card__title,
 .service-card--esencial .service-card__subtitle,
 .service-card--esencial .service-card__item,
-.service-card--esencial .service-card__audience {
+.service-card--esencial .service-card__audience,
+.service-card--esencial .service-card__price-value {
   color: var(--chocolate);
+}
+
+.service-card--esencial .service-card__price-details {
+  color: rgba(92, 79, 68, 0.75);
 }
 
 .service-card--esencial .service-card__audience strong {
