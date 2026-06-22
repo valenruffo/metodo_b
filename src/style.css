@@ -799,16 +799,35 @@ button {
   gap: var(--space-4);
 }
 
-.services__disclaimer {
-  margin-top: var(--space-6);
+.service-card__footer {
+  margin-top: auto;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.service-card--esencial .service-card__footer {
+  border-top-color: rgba(92, 79, 68, 0.2);
+}
+
+.service-card__disclaimer {
   font-family: var(--font-secondary);
-  font-size: 0.75rem;
+  font-size: 0.625rem;
+  line-height: 1.4;
   color: var(--text-muted);
-  text-align: center;
-  max-width: var(--max-width-narrow);
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
+  margin-top: var(--space-2);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: var(--space-2);
+  width: 100%;
+}
+
+.service-card--esencial .service-card__disclaimer {
+  color: rgba(92, 79, 68, 0.7);
+  border-top-color: rgba(92, 79, 68, 0.15);
 }
 
 .service-card {
@@ -945,14 +964,13 @@ button {
 }
 
 .service-card__audience {
-  margin-top: auto;
-  padding-top: var(--space-3);
-  border-top: 1px solid var(--border-light);
+  padding-top: var(--space-2);
   font-family: var(--font-secondary);
   font-size: 0.6875rem;
   font-style: italic;
   color: var(--text-muted);
   line-height: 1.5;
+  margin-bottom: var(--space-2);
 }
 
 .service-card__audience strong {
@@ -977,6 +995,17 @@ button {
   align-self: flex-start;
   transition: background var(--duration-fast) var(--ease-out-expo),
               transform var(--duration-fast) var(--ease-out-expo);
+}
+
+.service-card--esencial .service-card__cta {
+  align-self: center;
+}
+
+.service-card--integral .service-card__cta,
+.service-card--exclusivo .service-card__cta {
+  width: 100%;
+  justify-content: center;
+  align-self: stretch;
 }
 
 .service-card__cta:hover {
@@ -1052,9 +1081,7 @@ button {
   color: var(--chocolate);
 }
 
-.service-card--esencial .service-card__audience {
-  border-top-color: rgba(92, 79, 68, 0.2);
-}
+
 
 .service-card--integral {
   background: rgba(92, 79, 68, 0.6);
